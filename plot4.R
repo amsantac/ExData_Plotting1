@@ -7,6 +7,7 @@ df1$DateTime <- strptime(paste(df1$Date, df1$Time), "%d/%m/%Y %H:%M:%S")
 # plot 4
 old.par <- par(no.readonly = TRUE)
 par(mfcol = c(2, 2))
+par(bg="white")
 
 # box 1
 with(df1, plot(DateTime, Global_active_power, type = "l", ylab="Global Active Power (kilowatts)"))
